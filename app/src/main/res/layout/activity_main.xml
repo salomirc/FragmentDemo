@@ -6,16 +6,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <fragment
-        android:id="@+id/fragment_a"
-        android:name="com.example.fragmentdemo.fragments.AFragment"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        tools:layout="@layout/fragment_a" />
+    <!--    <fragment-->
+    <!--        android:id="@+id/fragment_a"-->
+    <!--        android:tag="TAG_FragmentA"-->
+    <!--        android:name="com.example.fragmentdemo.fragments.AFragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_weight="1"-->
+    <!--        tools:layout="@layout/fragment_a" />-->
 
     <!--    <fragment-->
     <!--        android:id="@+id/fragment_b"-->
+    <!--        android:tag="TAG_FragmentB"-->
     <!--        android:name="com.example.fragmentdemo.fragments.BFragment"-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="0dp"-->
@@ -24,6 +26,7 @@
 
     <!--    <fragment-->
     <!--        android:id="@+id/fragment_c"-->
+    <!--        android:tag="TAG_FragmentC"-->
     <!--        android:name="com.example.fragmentdemo.fragments.CFragment"-->
     <!--        android:layout_width="match_parent"-->
     <!--        android:layout_height="0dp"-->
