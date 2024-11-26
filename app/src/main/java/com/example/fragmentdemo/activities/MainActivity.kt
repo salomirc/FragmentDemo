@@ -36,10 +36,12 @@ class MainActivity : AppCompatActivity() {
         val fragmentC = CFragment()
 
         lifecycleScope.launch {
+//            delay(Long.MAX_VALUE)
             //Fragment_A
             newTransaction.apply {
                 // "add" or "replace" give the same result here
                 add(R.id.root_layout, fragmentA, TAG_A)
+//                addToBackStack(TAG_A)
                 commit()
             }
             delay(2000)
@@ -53,8 +55,7 @@ class MainActivity : AppCompatActivity() {
                 replace(R.id.root_layout, fragmentB, TAG_B)
                 setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 addToBackStack(TAG_B)
-            }.also {
-                it.commit()
+                commit()
             }
 
             // The fragment-ktx module provides a commit block that automatically
@@ -75,8 +76,7 @@ class MainActivity : AppCompatActivity() {
                 replace(R.id.root_layout, fragmentC, TAG_C)
                 setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                 addToBackStack(TAG_C)
-            }.also {
-                it.commit()
+                commit()
             }
             delay(2000)
 
